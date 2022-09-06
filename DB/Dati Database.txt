@@ -1,0 +1,32 @@
+--Utenti
+INSERT INTO `utenti`(`ID`, `Nome`, `Cognome`, `Username`, `Email`, `Password`) VALUES ('','Mario','Rossi','mrossi','mario.rossi@gmail.com',MD5('1234'));
+INSERT INTO `utenti`(`ID`, `Nome`, `Cognome`, `Username`, `Email`, `Password`) VALUES ('','Filippo','Delois','fDelois','lupettox11@gmail.com',MD5('1234'));
+INSERT INTO `utenti`(`ID`, `Nome`, `Cognome`, `Username`, `Email`, `Password`) VALUES ('','Alessio','Cucchi','aCucchi','cucchi@gmail.com',MD5('1234'));
+
+
+--Ceo
+INSERT INTO `ceo_organizzazioni` (`ID`, `Nome`, `pIVA`) VALUES ('', 'MUSIC UNLIMITED', '86334519757');
+INSERT INTO `ceo_organizzazioni` (`ID`, `Nome`, `pIVA`) VALUES ('', 'GRUPPO PERONI EVENTI', '86334519843');
+INSERT INTO `ceo_organizzazioni` (`ID`, `Nome`, `pIVA`) VALUES ('', 'CS EVENTS', '86334519800');
+INSERT INTO `ceo_organizzazioni` (`ID`, `Nome`, `pIVA`) VALUES ('', 'BT CONGRESS - BIOMEDICAL TECHNOLOGIES', '86331056823');
+INSERT INTO `ceo_organizzazioni` (`ID`, `Nome`, `pIVA`) VALUES ('', 'MALTA TOURISM AUTHORITY - VISIT MALTA', '82640159788');
+
+
+--Organizzazioni
+INSERT INTO `ceo_organizzazioni` (`ID`, `Nome`, `Cognome`, `Email`, `Password`, `CODOrganizzazione`) VALUES ('', 'paolo', 'rossi', 'paolo@gmail.com', MD5('paolo'), '1');
+INSERT INTO `ceo_organizzazioni` (`ID`, `Nome`, `Cognome`, `Email`, `Password`, `CODOrganizzazione`) VALUES ('', 'andrea', 'abretti', 'andrea@gmail.com', MD5('andrea'), '2');
+INSERT INTO `ceo_organizzazioni` (`ID`, `Nome`, `Cognome`, `Email`, `Password`, `CODOrganizzazione`) VALUES ('', 'alessio', 'panizzieri', 'alessio@gmail.com', MD5('alessio'), '3');
+INSERT INTO `ceo_organizzazioni` (`ID`, `Nome`, `Cognome`, `Email`, `Password`, `CODOrganizzazione`) VALUES ('', 'francesca', 'benedetti', 'francesca@gmail.com', MD5('francesca'), '4');
+INSERT INTO `ceo_organizzazioni` (`ID`, `Nome`, `Cognome`, `Email`, `Password`, `CODOrganizzazione`) VALUES ('', 'veronica', 'rossi', 'veronica@gmail.com', MD5('veronica'), '5');
+
+
+--Eventi
+INSERT INTO `eventi`(`ID`, `Nome`, `Genere`, `Luogo`, `Descrizione`, `Nposti`, `CODOrganizzazione`) VALUES ('','Firenze Rock','Musica','Firenze','Musica e magia','750','1');
+INSERT INTO `eventi`(`ID`, `Nome`, `Genere`, `Luogo`, `Descrizione`, `Nposti`, `CODOrganizzazione`) VALUES ('','Pub del gaming','Videogiochi','Polignano','Videogiocare in compagnia','50','2');
+INSERT INTO `eventi`(`ID`, `Nome`, `Genere`, `Luogo`, `Descrizione`, `Nposti`, `CODOrganizzazione`) VALUES ('','Valta-Berceto','Sport','Borgo Val Di Taro','Calcio d'inizio ore 19','250','1');
+
+
+--Biglietti
+INSERT INTO `biglietti`(`ID`, `Costo`, `CODEvento`) VALUES ('','50','1');
+INSERT INTO `biglietti`(`ID`, `Costo`, `CODEvento`) VALUES ('','15','2');
+INSERT INTO `biglietti`(`ID`, `Costo`, `CODEvento`) VALUES ('','5','3');
